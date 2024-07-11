@@ -12,6 +12,19 @@
 
 #Return the minimum number of operations needed to go back to the main folder after the change folder operations.
 
+#Input: logs = ["d1/","d2/","../","d21/","./"]
+# Output: 2
+# Explanation: Use this change folder operation "../" 2 times and go back to the main folder.
+#
+#
+# Example 2:
+#   Input: logs = ["d1/","d2/","./","d3/","../","d31/"]
+#   Output: 3
+#
+# Example 3:
+#   Input: logs = ["d1/","../","../","../"]
+# Output: 0
+
 def operations(logs)
    level = 0
    logs.each do |log|
